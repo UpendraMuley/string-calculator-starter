@@ -66,5 +66,10 @@ class StringCalculatorShould {
     	StringCalculator stringCalculator = new StringCalculator();
     	stringCalculator.add("-5,-8");
     }
+    @Test
+    public void ignore_Number_Greater_Than_thousand() throws Exception {
+    	StringCalculator stringCalculator = new StringCalculator();
+    	assertEquals(20,stringCalculator.add("10,10,1111"));
+    }
 }
 
