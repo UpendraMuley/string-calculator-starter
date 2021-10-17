@@ -54,5 +54,11 @@ class StringCalculatorShould {
     	StringCalculator stringCalculator = new StringCalculator();
     	assertEquals(9,stringCalculator.add("2\n4,3"));
     }
+    
+    @Test
+    public void multiple_Delimiter_ReturnSum_as_int() throws Exception {
+    	StringCalculator stringCalculator = new StringCalculator();
+    	assertEquals(33,stringCalculator.add("24#3&6"));
+    }
 }
 
