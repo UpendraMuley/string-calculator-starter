@@ -60,5 +60,11 @@ class StringCalculatorShould {
     	StringCalculator stringCalculator = new StringCalculator();
     	assertEquals(33,stringCalculator.add("24#3&6"));
     }
+    
+    @Test
+    public void  negative_Input_Returns_Exception() throws Exception {
+    	StringCalculator stringCalculator = new StringCalculator();
+    	stringCalculator.add("-5,-8");
+    }
 }
 
